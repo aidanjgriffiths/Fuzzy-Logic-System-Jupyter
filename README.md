@@ -17,23 +17,42 @@ From these quantified fuzzy sets, we can graph the membership functions of each 
 # Rules
 The next step of the fuzzy rule-based system is creating a set of rules set to inform our inference engine based on fuzzified input memberships given to the car controller. 
 Our memberships set of speed and distance have four membership functions each therefore we need to generate sixteen rules to provide knowledge to our fuzzy Logic System. [1] Our rule solution references the research paper ‘Automatic Braking System in Train using Fuzzy Logic’ for the basis of rule formation for our inference engine as we did not have the current knowledge required and needed to research previous solutions to inform the basis of our rule set. We have altered the statements and antecedents to better fit our unique solution for the car controllers auto-breaking function.
+
 These rules include:
+
 Rule 1: IF Distance is Very Close AND Speed is Very Slow THEN Braking Force is Very Light 
+
 Rule 2: IF Distance is Very Close AND Speed is Slow THEN Braking Force is Light
+
 Rule 3: IF Distance is Very Close AND Speed is Fast THEN Braking Force is Heavy
+
 Rule 4: IF Distance is Very Close AND Speed is Very Fast THEN Braking Force is Very Heavy
+
 Rule 5: IF Distance is Close AND Speed is Very Slow THEN Braking Force is Very Light
+
 Rule 6: IF Distance is Close AND Speed is Slow THEN Braking Force is Light
+
 Rule 7: IF Distance is Close AND Speed is Fast THEN Braking Force is Heavy
+
 Rule 8: IF Distance is Close AND Speed is Very Fast THEN Braking Force is Very Heavy
+
+
 Rule 9: IF Distance is Far AND Speed is Very Slow THEN Braking Force is Very Light
+
 Rule 10: IF Distance is Far AND Speed is Slow THEN Braking Force is Light
+
 Rule 11: IF Distance is Far AND Speed is Fast THEN Braking Force is Heavy
+
 Rule 12: IF Distance is Far AND Speed is Very Fast THEN Braking Force is Heavy
+
 Rule 13: IF Distance is Very Far AND Speed is Very Slow THEN Braking Force is Very Light
+
 Rule 14: IF Distance is Very Far AND Speed is Slow THEN Braking Force is Very Light
+
 Rule 15: IF Distance is Very Far AND Speed is Fast THEN Braking Force is Light
+
 Rule 16: IF Distance is Very Far AND Speed is Very Fast THEN Braking Force is Light
+
 The Rule Chart Below shows the relation between antecedents and resulting output membership.
 	Very Far	Far	Close	Very Close
 Very Slow	Very Light	Very Light	Very Light	Very Light
